@@ -1,7 +1,7 @@
 To create the plugin, create a folder on disk in the following path starting from the root of the Wordpress site.  This example 
 doesn't do anything, but you can use your imagination with this.  This is just a starter-skeleton for the plugin code file.
 
-This example assumes: wp-content/plougins/simple-plugin
+This example assumes: wp-content/plugins/simple-plugin
 
 * Inside this folder, create an index file with just one line at the top then create the main plugin file and 
 name it simple-plugin.php, as follows:
