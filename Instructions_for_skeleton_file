@@ -1,8 +1,10 @@
-To create the plugin, create a folder on disk in the following path starting from the root of the Wordpress site.  This example doesn't do anything, but you can use your imagination with this.  This is just a starter-skeleton for the plugin code file.
+To create the plugin, create a folder on disk in the following path starting from the root of the Wordpress site.  This example 
+doesn't do anything, but you can use your imagination with this.  This is just a starter-skeleton for the plugin code file.
 
 This example assumes: wp-content/plougins/simple-plugin
 
-* Inside this folder, create an index file with just one line at the top then create the main plugin file and name it simple-plugin.php:
+* Inside this folder, create an index file with just one line at the top then create the main plugin file and 
+name it simple-plugin.php, as follows:
 
 [index.php file]
 
@@ -19,8 +21,10 @@ This example assumes: wp-content/plougins/simple-plugin
 add_action("admin_menu", "simpleplugin_admin_menu");
 
 function simpleplugin_admin_menu() {
-	add_menu_page("Simple Plugin", "Simple Plugin", "administrator", "simpleplugin-menu", "simpleplugin_main");
-	add_submenu_page("simpleplugin-menu", "Settings", "Settings", "administrator", "simpleplugin-settings", "simpleplugin_settings");
+	add_menu_page("Simple Plugin", "Simple Plugin", "administrator", 
+		"simpleplugin-menu", "simpleplugin_main");
+	add_submenu_page("simpleplugin-menu", "Settings", "Settings", "administrator", 
+		"simpleplugin-settings", "simpleplugin_settings");
 }
 
 function simpleplugin_main() {
